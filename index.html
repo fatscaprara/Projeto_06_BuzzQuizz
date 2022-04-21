@@ -6,9 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>BuzzQuizz</title>
+    <title>Buzzquizz</title>
 </head>
 <body>
-    
+    <header>BuzzQuizz</header>
+    <article class="criacao-quizz">
+        <!-- Primeira página de criação de quiz, informações básicas -->
+        <div class="first-page hiden">
+            <section class="infoBasica-criacao-quizz">
+                <h1>Comece pelo começo</h1>
+                <input type="text" placeholder="Título do seu quizz" class="titulo-quizz">
+                <input type="text" placeholder="URL da imagem do seu quizz" class="imagem-url-quizz">
+                <input type="text" placeholder="Quantidade de perguntas do seu quizz" class="qt-perguntas-quizz">
+                <input type="text" placeholder="Quantidade de níveis do quizz" class="qt-niveis-quizz">
+                <button class="prosseguir" onclick="infoBasica_salvar_quizz()">Prosseguir pra criar
+                perguntas</button>
+            </section>
+        </div>
+    </article>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
