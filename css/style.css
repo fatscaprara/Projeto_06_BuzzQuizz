@@ -42,7 +42,7 @@ header {
     font-size: 23px;
 }
 
-.infoBasica-criacao-quizz, .perguntas-criacao-quizz, .niveis-creating-quizz {
+.infoBasica-criacao-quizz, .perguntas-criacao-quizz, .niveis-criacao-quizz {
    display: flex;
    flex-direction: column;
    align-items: center;
