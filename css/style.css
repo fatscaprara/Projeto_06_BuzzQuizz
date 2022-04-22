@@ -7,6 +7,10 @@ body {
     font-family: roboto, sans-serif;
 }
 
+.escondido {
+    display: none;
+}
+
 /* Header do Buzzquizz */
 header {
     width: 100%;
@@ -28,7 +32,7 @@ header {
     z-index: 1;
 }
 
-/* CSS das páginas de criação de quizz */
+/* CSS da página de criação de quizz - Informações Básicas (tela 3.1) */
 .criacao-quizz {
     margin-top: 69px;
     margin-left: auto;
@@ -75,5 +79,38 @@ header {
     color: #FFF5F4;
 }
 
+/* CSS da página de criação de quizz - Perguntas tela(3.2) */ 
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
 
+.iconeQuizz {
+    font-size: 35px;
+    color: #000000;
+}
 
+.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-questao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 564px;
+}
+
+.nome-questao button {
+    background-color: #FAFAFA;
+    border: none;
+}
+
+.spaceCss {
+    margin-top: 20px;
+}
