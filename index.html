@@ -10,6 +10,7 @@
 </head>
 <body>
     <header>BuzzQuizz</header>
+    
     <article class="pagina-inicial">
         <div class="container-criar-quiz">
             <p>Você não criou nenhum quiz ainda :(</p>
@@ -27,8 +28,22 @@
         </div>
     </article>
 
+    <!-- PÁGINA DE QUIZZ-->
+    <article class="pagina-quizz escondido">
+        
+        <div class="imagem-pagina-quizz"></div>
+        <!--Inseridas via JS (função  (função )) -->
+        <div class="perguntas-pagina-quizz"></div>
+        <!--Inseridas via JS (função ) -->
+        <section class="resultado-pagina-quizz escondido"></section>
+        <!--Inseridas via JS (função ) -->
+        <div onclick="RESETAR_O_QUIZZ_FUNCAO_NOME_A_DECIDIR()" class="">Reiniciar Quizz</div>
+        <div onclick="voltarInicio()" class="voltar-inicio-pagina">Voltar pra home</div>
+    </article>
+
+    <!-- CRIAÇÃO DE QUIZZ -->
     <article class="criacao-quizz escondido">
-        <!-- Primeira página de criação de quiz, informações básicas -->
+        <!-- Primeira página de criação de quiz, informações básicas (tela 3.1) -->
         <div class="primeira-pagina">
             <section class="infoBasica-criacao-quizz">
                 <h1>Comece pelo começo</h1>
@@ -41,23 +56,37 @@
             </section>
         </div>
 
-        <!-- Segunda página de criação de quizz, adicionar perguntas -->
+        <!-- Segunda página de criação de quizz, adicionar perguntas (tela 3.2) -->
         <div class="segunda-pagina escondido">
             <section class="perguntas-criacao-quizz">
                 <h1>Crie suas perguntas</h1>
-                <!--Inseridas via JS -->
+                <!--Inseridas via JS (função "renderizarPerguntas()" ) -->
             </section>
         </div>
 
+        <!-- Terceira página de criação de quizz, adicionar níveis (tela 3.3) -->
         <div class="terceira-pagina escondido">
             <section class="niveis-criacao-quizz">
                 <h1>Agora, decida os níveis</h1>
-                <!-- Inseridos via JS -->
+                <!-- Inseridos via JS (função "renderizarNiveis ()" ) -->
             </section>
         </div>
+
+        <!-- Quarta página de criação de quizz, sucesso na criação (tela 3.4) -->
+        <div class="quarta-pagina escondido">
+            <section class="finalizado-quizz">
+               <h1>Seu quizz está pronto!</h1>
+               <div class="containerFinalizado" onclick="irParaQuizzCriado(quizzCriado)">
+                   <img class ="imagem-fundo-quizz" src="">
+                   <div class="descricao-quizz-criado">EXEMPLO</div> 
+               </div>
+               <button class="prosseguir" onclick="irParaQuizzCriado(quizzCriado)">Acessar Quizz</button>
+               <div onclick="voltarInicio()" class="voltar-inicio-pagina">Voltar pra home</div>
+           </section>
+       </div>
     </article>
 
-	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="scripts/script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
