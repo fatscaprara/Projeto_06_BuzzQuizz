@@ -2,6 +2,7 @@ let numPerguntas = null;
 let error = false;
 let objetoPerguntas = {};
 let quizzCriado = [];
+const urlAPI = 'https://mock-api.driven.com.br/api/v6/buzzquizz/'
 
 //Salva as informações básicas da criação do quizz (tela 3.1)
 function infoBasica_salvar_quizz() {
@@ -186,3 +187,25 @@ function validarPerguntas(numPerguntas) {
     console.log(quizzCriado)
 
 }
+
+//Validando se já existem quizzes criados pelos usuários
+function listarQuiz(){
+    const promise = axios.get(urlAPI + 'quizzes');
+    promise.then(tratarSucessoListagem);
+}
+
+function tratarSucessoListagem(response){
+    console.log(response.data);
+
+    for(let i = 0; i < response.data.length; i++){
+        console.log(response.data[i].title)
+        document.querySelector('.listagem-quizzes').innerHTML += `
+            <div class="quiz-listado">
+                <img src="${response.data[i].image}" alt="">
+                <h2>${response.data[i].title}</h2>
+            </div>
+        `
+    }
+}
+
+listarQuiz();

@@ -10,7 +10,24 @@
 </head>
 <body>
     <header>BuzzQuizz</header>
-    <article class="criacao-quizz">
+    <article class="pagina-inicial">
+        <div class="container-criar-quiz">
+            <p>Você não criou nenhum quiz ainda :(</p>
+            <button class="btn-criar-quiz">Criar Quiz</button>
+        </div>
+
+        <div class="container-quiz">
+            <h1>Todos os Quizzes</h1>
+            <div class="listagem-quizzes">
+                <div class="quiz-listado">
+                    <img src="images/Rectangle 34.png" alt="">
+                    <h2>Acerte os personagens corretos dos Simpsons e prove seu amor!</h2>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="criacao-quizz escondido">
         <!-- Primeira página de criação de quiz, informações básicas -->
         <div class="primeira-pagina">
             <section class="infoBasica-criacao-quizz">
@@ -39,6 +56,8 @@
             </section>
         </div>
     </article>
+
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="scripts/script.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
