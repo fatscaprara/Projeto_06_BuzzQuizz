@@ -305,3 +305,23 @@ Algumas classes são iguais as das anteriores */
     word-break: break-word;
     color: #484848;   
 }
+
+@media (max-width: 1100px) {
+
+/* Página de criacao de quizz (Versão mobile) */
+.criacao-quizz input {
+    width: 341px;
+}
+
+.prosseguir {
+    width: 324px;
+}
+
+.imagem-fundo-quizz{
+    width: 340px;
+}
+
+.nome-questao {
+    width: 375px;
+}
+}
